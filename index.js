@@ -9,7 +9,7 @@ DB_FILE = './data.json';
 const rcon = new Rcon ({
   host: '69.62.78.191',
   port: 27016,
-  password: '2suSukDiHGDl'
+  password: 'INSERT RCON PASSWORD HERE'
 });
 
 
@@ -40,7 +40,7 @@ client.on('messageCreate', async message => {
     const command = message.content.slice(6);
     console.log(command)
     try {
-         rcon.authenticate('2suSukDiHGDl').then(()=>
+         rcon.authenticate('INSERT RCON PASSWORD HERE').then(()=>
            rcon.execute(command).then(response => {
                message.reply(`RCON Response:\n\`\`\`${response}\`\`\``);
                  rcon.disconnect();
