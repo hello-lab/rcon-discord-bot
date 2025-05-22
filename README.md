@@ -131,7 +131,7 @@ sudo journalctl -u csgo-discord-bot -f
 ### Running status command
 ![image](https://github.com/user-attachments/assets/233e9d5d-ab15-4fc0-b687-b9dd21e2685a)
 ### AI suggestion for invalid command
-![image](https://github.com/user-attachments/assets/e9663867-cfc8-45c6-8ff6-057e23f6f584)
+![image](https://github.com/user-attachments/assets/70f65bd3-40b2-4ffa-973f-4fa4b8464df9)
 
 ## 💾 Tech Stack
 
