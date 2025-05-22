@@ -31,6 +31,7 @@ npm install
 Create a `.env` file in the project root:
 
 ```env
+CLIENT_ID=your-discord-bot-client-id
 GEMINI_API_KEY=your-google-genai-key
 DISCORD_TOKEN=your-discord-bot-token
 
