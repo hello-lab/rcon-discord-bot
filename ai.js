@@ -1,3 +1,4 @@
+
 require('dotenv').config();
 
 async function getFixedCommand(userCommand) {
@@ -18,17 +19,25 @@ async function getFixedCommand(userCommand) {
       },
     },
     systemInstruction: [
-      {
-        text: `You will get a wrong cs:go server command — suggest the corrected command.`,
-      },
+        {
+          text: 'you will either get a wrong cs:go server/source_mod command or the user asking for the command for a task. In the help_text property you shall provide a help statement saying what the user might mean and suggest the correct command. in the command property you shall return only the command',
+        }
     ],
   };
-
   const model = 'gemini-2.0-flash';
-
   const contents = [
-    { role: 'user', parts: [{ text: userCommand }] },
+    
+    {
+      role: 'user',
+      parts: [
+        {
+          text: userCommand,
+        },
+      ],
+    },
   ];
+
+ 
 
   const response = await ai.models.generateContentStream({
     model,
