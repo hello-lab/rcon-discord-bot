@@ -1,0 +1,18 @@
+{
+  "name": "cs-go-discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^1.0.1",
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.5.0",
+    "rcon": "^1.1.0",
+    "rcon-srcds": "^2.1.0"
+  }
+}
